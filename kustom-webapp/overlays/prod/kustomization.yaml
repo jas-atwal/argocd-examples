@@ -1,4 +1,4 @@
-bases:
+resources:
 - ../../base
 
 patches:
@@ -6,4 +6,5 @@ patches:
 
 configMapGenerator:
 - name: mykustom-map
-  env: config.properties
+  envs:
+  - config.properties
